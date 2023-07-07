@@ -1,0 +1,380 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+/* Main Section */
+.main-container{
+    position: relative;
+    height: 100vh;
+    width: auto;
+    padding: 10px;
+    margin: 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+/* Nav Section */
+
+#title{
+    position: relative;
+    height: 10vh;
+    margin-bottom: 50px;
+  }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav>ul>li>h1{
+    font-size: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+nav>ul>li>img{
+    border-radius: 50%;
+}
+
+/* End of Nav Section */
+
+/* Figure Section */
+
+#figure .figure-container{
+    position: relative;
+    display: block;
+    height: 80vh;
+    width: 99%;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+#figure img{
+    border: 10px solid black;  
+}
+
+#figure img:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.5s ease;
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 5%;
+}
+
+/* End of Figure Section */
+
+/* End of Main Section */
+
+/* Button Section */
+
+.button-container{
+    display: flex;
+    position: relative;
+    height: 15vh;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#about .btn-success {
+    margin-top: 2rem;
+    padding: 10px;
+  }
+  
+  #about .btn-success a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  #about .btn-success a:hover{
+    color: rgb(37, 107, 37);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+/* End of Button Section */
+
+/* About Section */
+
+.about-container{
+    margin-top: 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: 10px solid #fff;
+    position: relative;
+    height: 55vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+#about h2{
+    font-size: 3rem;
+}
+/* End of About Section */
+
+/* Contact Section */
+
+#contact{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#contact-me{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-container{
+    height:15vh;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.contact-container h3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#icon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 20px 0 10px 0;
+}
+
+.contact-container i {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+  .contact-container i:hover {
+    color: white;
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s ease;
+    background-color: black;
+  }
+/* End of Contact Section */
+
+/* Footer Section */
+    footer {
+        height: 100px;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    footer a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer a:hover{
+        text-decoration: none;
+        color: grey;
+    }
+/* End of Footer Section */
+
+/* Media Query */
+
+@media (min-width: 900px) and (max-width: 1500px) {
+    nav>ul>li>h1 {
+      font-size: 3.8rem;
+      padding-top: 10px;
+    }
+
+    .about-container{
+        margin-top: 0;
+        padding: 20px 25px 0 0;
+        background-color: #333;
+        color: white;
+        border: 10px solid #fff;
+        position: relative;
+        height: 70vh;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    nav>ul>li>h1 {
+      font-size: 3rem;
+      padding-top: 10px;
+    }
+
+    .main-container{
+        position: relative;
+        height: 100vh;
+        width: 93%;
+        padding: 10px;
+        margin: 20px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        background-color: #333;
+        color: white;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    #figure img{
+        border: 10px solid black; 
+        max-width: 450px; 
+    }
+
+    #figure .figure-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        height: 70vh;
+        width: 95%;
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        padding: 20px;
+    }
+
+    .about-container{
+        margin-top: 0;
+        padding: 20px 25px 0 0;
+        background-color: #333;
+        color: white;
+        border: 10px solid #fff;
+        position: relative;
+        height: 65vh;
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.2rem;
+    }
+} 
+
+@media (max-width: 600px) {
+    nav>ul>li>h1{
+      font-size: 2rem;
+    }
+
+    .main-container{
+        position: relative;
+        height: 82vh;
+        width: 91.5%;
+        padding: 10px;
+        margin: 20px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        background-color: #333;
+        color: white;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 1.1943rem;
+        font-weight: bold;
+    }
+
+    .about-container{
+        margin-top: 0;
+        padding-right: 40px;
+        background-color: #333;
+        color: white;
+        border: 10px solid #fff;
+        position: relative;
+        height: 80vh;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.2rem;
+    }
+
+    #figure .figure-container{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        height: 62vh;
+        width: 90%;
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        padding: 20px;
+    }
+    
+    #figure img{
+        border: 10px solid black; 
+        max-width: 330px; 
+    }
+    
+    #figure img:hover{
+        cursor: pointer;
+        transform: scale(1.03);
+        transition: 0.5s ease;
+        background-color: black;
+        border: 10px solid black;
+        border-radius: 5%;
+    }
+
+    .contact-container i{
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .contact-container i:hover {
+        color: white;
+        cursor: pointer;
+        transform: scale(1.01);
+        transition: 0.5s ease;
+        background-color: black;
+      }
+  }
+   
+  /* End of Media Query */
