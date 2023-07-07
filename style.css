@@ -306,7 +306,7 @@ nav>ul>li>img{
     .main-container{
         position: relative;
         height: 82vh;
-        width: 91.5%;
+        width: 100%;
         padding: 10px;
         margin: 20px;
         display: inline-flex;
@@ -327,14 +327,14 @@ nav>ul>li>img{
         border: 10px solid #fff;
         position: relative;
         height: 80vh;
-        width: auto;
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #figure .figure-container{
@@ -342,7 +342,7 @@ nav>ul>li>img{
         display: flex;
         flex-wrap: wrap;
         height: 62vh;
-        width: 90%;
+        width: 100%;
         background-color: white;
         color: black;
         margin-top: 10px;
@@ -351,7 +351,7 @@ nav>ul>li>img{
     
     #figure img{
         border: 10px solid black; 
-        max-width: 330px; 
+        max-width: 200px; 
     }
     
     #figure img:hover{
